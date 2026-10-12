@@ -1,0 +1,23 @@
+name: WhatsNewSWIFTUIIos27
+options:
+  bundleIdPrefix: com.bleepingswift
+  deploymentTarget:
+    iOS: "26.0"
+  xcodeVersion: "27.0"
+  generateEmptyDirectories: true
+settings:
+  SWIFT_VERSION: "6.0"
+  SWIFT_STRICT_CONCURRENCY: complete
+targets:
+  WhatsNewSWIFTUIIos27:
+    type: application
+    platform: iOS
+    sources:
+      - path: WhatsNewSWIFTUIIos27/Sources
+        excludes:
+          - "**/.DS_Store"
+    settings:
+      PRODUCT_BUNDLE_IDENTIFIER: com.bleepingswift.whatsnewswiftuiios27
+      GENERATE_INFOPLIST_FILE: true
+      INFOPLIST_KEY_UIApplicationSceneManifest_Generation: true
+      INFOPLIST_KEY_UILaunchScreen_Generation: true
